@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>Code Gym 爬蟲程式範例</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/TableStyle.css">
+	
+	<!--[if !IE]><!-->
+	<style>
+	
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}
+	
+	</style>
+	<!--<![endif]-->
+
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+	<h1>Code Gym 爬蟲程式範例</h1>
+	<h2>Micosoft 損益表</h2>
+	<p></p>
+    
+	<table>
+		<thead>
+		<tr>
+			<th>symbol</th>
+			<th>date</th>
+			<th>revenue</th>
+			<th>gross profit</th>
+			<th>gross profit ratio</th>
+			<th>operating income</th>
+			<th>operating income ratio</th>
+			<th>net income</th>
+			<th>net income ratio</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>MSFT</td>
+			<td>2022-10-25</td>
+			<td>50122000000</td>
+			<td>34670000000</td>
+			<td>0.6917</td>
+			<td>21518000000</td>
+			<td>0.429</td>
+			<td>17556000000</td>
+			<td>0.350</td>
+		</tr>
+		<tr>
+		  <td>MSFT</td>
+		  <td>2022-07-28</td>
+		  <td>51865000000</td>
+		  <td>35436000000</td>
+		  <td>0.683</td>
+		  <td>20534000000</td>
+		  <td>0.395</td>
+		  <td>16740000000</td>
+		  <td>0.322</td>
+		</tr>
+		<tr>
+		  <td>MSFT</td>
+		  <td>2022-04-26</td>
+		  <td>49360000000</td>
+		  <td>33745000000</td>
+		  <td>0.683</td>
+		  <td>20364000000</td>
+		  <td>0.412</td>
+		  <td>16728000000</td>
+		  <td>0.338</td>
+		</tr>
+		<tr>
+		  <td>MSFT</td>
+		  <td>2022-01-25</td>
+		  <td>51728000000</td>
+		  <td>34768000000</td>
+		  <td>0.672</td>
+		  <td>22247000000</td>
+		  <td>0.430</td>
+		  <td>18765000000</td>
+		  <td>0.362</td>
+		</tr>
+		<tr>
+		  <td>MSFT</td>
+		  <td>2021-10-26</td>
+		  <td>45317000000</td>
+		  <td>31671000000</td>
+		  <td>0.698</td>
+		  <td>20238000000</td>
+		  <td>0.446</td>
+		  <td>20505000000</td>
+		  <td>0.452</td>
+		</tr>
+		</tbody>
+	</table>
+	
+	</div>
+		
+</body>
+
+</html>
